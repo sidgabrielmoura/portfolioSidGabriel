@@ -18,13 +18,13 @@ export function Navbar(){
                     <div className="bg-[url(../assets/vercelLogo.svg)] bg-cover bg-center bg-no-repeat 
                     lg:w-[25px] lg:h-[20px]  
                     md:w-[15px] md:h-[10px]
-                    min-[320px]:w-[20px] min-[320px]:h-[11px]"/>
+                    min-[320px]:w-[20px] min-[320px]:h-[16px]"/>
                     <p className="text-[#424242]">/</p>
 
                     <Avatar className="
                     lg:w-[40px] lg:h-[40px]
                     md:w-[30px] md:h-[30px]
-                    min-[320px]:w-[25px] min-[320px]:h-[25px]">
+                    min-[320px]:w-[28px] min-[320px]:h-[28px]">
                         <AvatarImage src="https://github.com/sidgabrielmoura.png" />
                         <AvatarFallback className="text-slate-200 bg-black border border-zinc-400">SG</AvatarFallback>
                     </Avatar>
@@ -33,8 +33,7 @@ export function Navbar(){
                     hover:text-slate-50  transition-colors duration-200
                     lg:text-[15px]
                     md:text-[12px]
-                    min-[320px]:text-[10px]
-                    min-[425px]:text-[11px]">SidGabriel - FrontEnd developer</a>
+                    min-[320px]:text-[12px]">SidGabriel - FrontEnd developer</a>
 
                     <span className="text-slate-100 px-2 py-1 bg-zinc-800 rounded-full
                     lg:text-[13px]
