@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Fira_Sans } from 'next/font/google'
+import { Noto_Sans } from 'next/font/google'
 import './globals.css'
+import { Navbar } from '@/components/siteComponents/navbar'
 
-const firaSans = Fira_Sans({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600'] })
+const noto = Noto_Sans({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600'] })
 
 export const metadata: Metadata = {
   title: 'Portfólio - SidGabriel',
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${firaSans.className} bg-[#000000] w-[100vw] h-[100vh]`}>{children}</body>
+      <body className={`${noto.className} bg-[#000000] w-[100vw] h-[100vh] p-3`}>
+        {children}
+        <Navbar/>
+      </body>
     </html>
   )
 }
