@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${noto.className} bg-[#000000] w-[100vw] h-[100vh] p-3`}>
         {children}
         <Navbar/>

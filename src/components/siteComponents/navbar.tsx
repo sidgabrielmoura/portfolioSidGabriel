@@ -1,7 +1,6 @@
 import { LiaArrowsAltVSolid } from "react-icons/lia";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { HiBars3 } from "react-icons/hi2";
-import Link from "next/link";
 import { Popover, PopoverTrigger, PopoverContent } from "../ui/popover";
 import { Separator } from "@/components/ui/separator";
 import '../../app/globals.css'
@@ -11,7 +10,7 @@ export function Navbar(){
     
     return(
         <>
-            <section className="flex gap-4 items-center justify-between w-full">
+            <section className="flex gap-4 items-center justify-between w-full mt-2">
 
                 <div className="flex items-center 
                 lg:gap-3
@@ -36,12 +35,12 @@ export function Navbar(){
                     hover:text-slate-50  transition-colors duration-200
                     lg:text-[15px]
                     md:text-[12px]
-                    min-[320px]:text-[10px]">SidGabriel - FrontEnd developer</a>
+                    min-[320px]:text-[13px]">SidGabriel - FrontEnd developer</a>
 
                     <span className="text-slate-100 px-2 py-1 bg-zinc-800 rounded-full
                     lg:text-[13px]
                     md:text-[10px]
-                    min-[320px]:text-[8px]">Available</span>
+                    min-[320px]:text-[10px]">Available</span>
 
                     <div className=" text-slate-100 flex items-center justify-center
                         hover:bg-zinc-800 transition-colors duration-200 delay-100
@@ -54,15 +53,14 @@ export function Navbar(){
                 </div>
                 <div className="flex items-center text-zinc-300 
                 lg:text-[14px] lg:gap-5
-                md:text-[12px] md:gap-3
-                min-[320px]:gap-3">
+                min-[320px]:gap-3 min-[320px]:text-[12px]">
 
                     <div className="flex items-center
                     md:hidden
                     min-[320px]:block">
 
                         <Popover>
-                            <PopoverTrigger>
+                            <PopoverTrigger className="text-[20px]">
                                 <HiBars3/>
                             </PopoverTrigger>
                             <PopoverContent className="flex flex-col gap-2 text-zinc-200 rounded-[20px] bg-zinc-950 bg-opacity-20">
@@ -155,11 +153,11 @@ export function Navbar(){
                 </div>
             </section>
 
-            <section className="flex gap-4 items-center justify-between w-full">
+            <section className="flex gap-4 items-center justify-between w-full mt-2">
                 <div className="flex items-center text-zinc-500 py-2 
                 lg:text-[14px]
                 md:text-[13px]
-                min-[320px]:text-[11px]">
+                min-[320px]:text-[13px]">
                     <a href={""} className="transition-colors duration-300 delay-75 flex items-center justify-center h-[1.98rem] px-4 rounded-[3px] hover:bg-zinc-900 hover:text-zinc-300">About</a>
                     <a href={""} className="transition-colors duration-300 delay-75 flex items-center justify-center h-[1.98rem] px-4 rounded-[3px] hover:bg-zinc-900 hover:text-zinc-300">Projects</a>
                     <a href={""} className="transition-colors duration-300 delay-75 flex items-center justify-center h-[1.98rem] px-4 rounded-[3px] hover:bg-zinc-900 hover:text-zinc-300">Play here</a>

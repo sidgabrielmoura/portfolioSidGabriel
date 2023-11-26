@@ -76,7 +76,7 @@
 }
 
 #smallAvatar{
-  animation: rotate 5s infinite linear;
+  animation: rotate 7s infinite linear;
 }
 
 @keyframes rotate {
