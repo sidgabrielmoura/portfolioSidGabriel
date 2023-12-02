@@ -6,7 +6,6 @@ import { Separator } from "@/components/ui/separator";
 import '../../app/globals.css'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { ActivedLinks } from "./linksNavBar";
-import { ProjectsComp } from "./projectsPage";
 
 export function Navbar(){
     
