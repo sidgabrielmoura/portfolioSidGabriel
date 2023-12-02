@@ -4,7 +4,9 @@ import { HiBars3 } from "react-icons/hi2";
 import { Popover, PopoverTrigger, PopoverContent } from "../ui/popover";
 import { Separator } from "@/components/ui/separator";
 import '../../app/globals.css'
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
+import { ActivedLinks } from "./linksNavBar";
+import { ProjectsComp } from "./projectsPage";
 
 export function Navbar(){
     
@@ -154,13 +156,13 @@ export function Navbar(){
             </section>
 
             <section className="flex gap-4 items-center justify-between w-full mt-2">
-                <div className="flex items-center text-zinc-500 py-2 
+                <div className="flex items-center text-zinc-500 py-2 gap-2
                 lg:text-[14px]
                 md:text-[13px]
                 min-[320px]:text-[13px]">
-                    <a href={""} className="transition-colors duration-300 delay-75 flex items-center justify-center h-[1.98rem] px-4 rounded-[3px] hover:bg-zinc-900 hover:text-zinc-300">About</a>
-                    <a href={""} className="transition-colors duration-300 delay-75 flex items-center justify-center h-[1.98rem] px-4 rounded-[3px] hover:bg-zinc-900 hover:text-zinc-300">Projects</a>
-                    <a href={""} className="transition-colors duration-300 delay-75 flex items-center justify-center h-[1.98rem] px-4 rounded-[3px] hover:bg-zinc-900 hover:text-zinc-300">Play here</a>
+                    <ActivedLinks href="/">about</ActivedLinks>
+                    <ActivedLinks href="/projectsPage">projects</ActivedLinks>
+                    <ActivedLinks href="/playHere">play here</ActivedLinks>
                 </div>
             </section>
             <Separator className="bg-zinc-600"/>
