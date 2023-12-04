@@ -10,8 +10,7 @@ export function ProjectsComp(){
     return (
         <>
             <Navbar/>
-
-            <ScrollArea>
+            
                 <section className="flex flex-col gap-3 
                 lg:px-[50px] lg:py-[25px]
                 min-[320px]:px-[25px] min-[320px]:py-[20px]">
@@ -51,6 +50,7 @@ export function ProjectsComp(){
 
                     <div className="flex gap-5 mt-4 w-full flex-col">
                         <section className="text-zinc-200 w-full flex flex-col gap-3">
+                            
                             <div className="flex items-center gap-2 hover:text-zinc-50"><FaGithub/><a target="_blank" href="https://github.com/sidgabrielmoura/text-convert">sidgabrielmoura/text-convert</a></div>
 
                             <div className="w-full border flex justify-between border-zinc-500 bg-zinc-950 rounded-lg px-[20px] py-[3vh]
@@ -58,27 +58,25 @@ export function ProjectsComp(){
                             min-[320px]:flex-col min-[320px]:gap-3">
                                 <div className="h-full flex items-center gap-3">
 
-                                    {/* <div className="bg-[url(../assets/textConvert.png)] bg-cover bg-center w-[30%] h-full rounded-full
-                                    md:block
-                                    min-[320px]:hidden"/> */}
+                                        <div className="bg-[url(../assets/textConvert.png)] h-[10vh] w-[10vw] bg-cover bg-center rounded-xl
+                                        md:block
+                                        min-[320px]:hidden" />
 
-                                    <div className="h-full flex justify-center flex-col w-[300px]">
+                                    <div className="h-full flex justify-center flex-col ">
+
                                         <h1 className="text-zinc-50">Text-Convert</h1>
-                                        <p className="text-zinc-500 hover:text-zinc-50
+                                        <p className="text-zinc-500 hover:text-zinc-300
                                         transition-colors duration-300 hover:underline"><a href="https://text-convert-henna.vercel.app" target="_blank">text-convert-henna.vercel.app</a></p>
+
                                     </div>
                                 </div>
 
                                 <div className="h-full flex justify-center flex-col">
                                     <h1 className="text-zinc-50">tools</h1>
-                                    <p className="text-zinc-500 cursor-default transition-colors duration-300">JavaScript / Html5 / Css3</p>    
-                                </div>
-
-                                <div className="h-full flex items-center">
-                                    <div className="w-[40px] h-[40px] border-[5px] border-green-600 rounded-full flex items-center
-                                    text-[12px] justify-center cursor-default">100</div>
+                                    <p className="text-zinc-500 cursor-default transition-colors duration-300 text-[15px]">JavaScript / Html5 / Css3</p>    
                                 </div>
                             </div>
+
                         </section>
 
 
@@ -90,26 +88,23 @@ export function ProjectsComp(){
                             min-[320px]:flex-col min-[320px]:gap-3">
                                 <div className="h-full flex items-center gap-3">
 
-                                    {/* <div className="bg-[url(../assets/fast-cube-img.png)] bg-cover bg-center w-[30%] h-[100%] rounded-full
-                                    md:block
-                                    min-[320px]:hidden"/> */}
-
-                                    <div className="h-full flex justify-center flex-col w-[300px]">
+                                    <div className="bg-[url(../assets/fast-cube-img.png)] h-[10vh] w-[10vw] bg-cover bg-center rounded-xl
+                                        md:block
+                                        min-[320px]:hidden"/> 
+                                    
+                                    <div className="h-full flex justify-center flex-col">
                                         <h1 className="text-zinc-50">FastCube</h1>
-                                        <p className="text-zinc-500 hover:text-zinc-50
+                                        <p className="text-zinc-500 hover:text-zinc-300
                                         transition-colors duration-300 hover:underline"><a href="https://fast-cube.vercel.app" target="_blank">fast-cube.vercel.app</a></p>
                                     </div>
+
                                 </div>
 
                                 <div className="h-full flex justify-center flex-col">
                                     <h1 className="text-zinc-50">tools</h1>
-                                    <p className="text-zinc-500 cursor-default transition-colors duration-300">Tailwindcss / Next / React / TypeScript</p>    
+                                    <p className="text-zinc-500 cursor-default transition-colors duration-300 text-[15px]">Tailwindcss / Next / React / TypeScript</p>    
                                 </div>
-
-                                <div className="h-full flex items-center">
-                                    <div className="w-[40px] h-[40px] border-[5px] border-green-600 rounded-full flex items-center
-                                    text-[12px] justify-center cursor-default">100</div>
-                                </div>
+                                
                             </div>
                         </section>
 
@@ -135,13 +130,10 @@ export function ProjectsComp(){
 
                                 <div className="h-full flex justify-center flex-col">
                                     <h1 className="text-zinc-50">tools</h1>
-                                    <p className="text-zinc-500 cursor-default transition-colors duration-300">...</p>    
+                                    <p className="text-zinc-500 cursor-default transition-colors duration-300 text-[15px]">...</p>    
                                 </div>
 
-                                <div className="h-full flex items-center">
-                                    <div className="w-[40px] h-[40px] border-[5px] border-green-600 rounded-full flex items-center
-                                    text-[12px] justify-center cursor-default">0</div>
-                                </div>
+                                
                             </div>
                         </section>
 
@@ -167,19 +159,16 @@ export function ProjectsComp(){
 
                                 <div className="h-full flex justify-center flex-col">
                                     <h1 className="text-zinc-50">tools</h1>
-                                    <p className="text-zinc-500 cursor-default transition-colors duration-300">...</p>    
+                                    <p className="text-zinc-500 cursor-default transition-colors duration-300 text-[15px]">...</p>    
                                 </div>
 
-                                <div className="h-full flex items-center">
-                                    <div className="w-[40px] h-[40px] border-[5px] border-green-600 rounded-full flex items-center
-                                    text-[12px] justify-center cursor-default">0</div>
-                                </div>
+                                
                             </div>
                         </section>
 
                     </div>
                 </section>
-            </ScrollArea>
+            
         </>
     )
 }

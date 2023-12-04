@@ -11,18 +11,13 @@ export function Navbar(){
     
     return(
         <>
-            <section className="flex gap-4 items-center justify-between w-full mt-2">
+            <section className="flex gap-4 items-center justify-between w-full mt-2 px-[5px]
+            ">
 
                 <div className="flex items-center 
                 lg:gap-3
                 min-[320px]:gap-2
                 min-[425px]:gap-1">
-
-                    <div className="bg-[url(../assets/vercelLogo.svg)] bg-cover bg-center bg-no-repeat 
-                    lg:w-[25px] lg:h-[20px]  
-                    md:w-[15px] md:h-[10px]
-                    min-[320px]:w-[16px] min-[320px]:h-[12px]"/>
-                    <p className="text-[#424242]">/</p>
 
                     <Avatar className="
                     lg:w-[40px] lg:h-[40px]
@@ -43,14 +38,6 @@ export function Navbar(){
                     md:text-[10px]
                     min-[320px]:text-[10px]">Available</span>
 
-                    <div className=" text-slate-100 flex items-center justify-center
-                        hover:bg-zinc-800 transition-colors duration-200 delay-100
-                        lg:w-[30px] lg:h-[40px] lg:rounded-[10px]
-                        md:w-[20px] md:h-[30px] md:rounded-[8px]
-                        min-[320px]:w-[13px] min-[320px]:h-[20px] min-[320px]:rounded-[6px]">
-                        <LiaArrowsAltVSolid/>
-                    </div>
-
                 </div>
                 <div className="flex items-center text-zinc-300 
                 lg:text-[14px] lg:gap-5
@@ -64,7 +51,7 @@ export function Navbar(){
                             <PopoverTrigger className="text-[20px]">
                                 <HiBars3/>
                             </PopoverTrigger>
-                            <PopoverContent className="flex flex-col gap-2 text-zinc-200 rounded-[20px] bg-zinc-950 bg-opacity-20">
+                            <PopoverContent className="flex flex-col gap-2 text-zinc-200 rounded-[20px] bg-zinc-950 bg-opacity-90">
                                 <Sheet>
                                     <SheetTrigger>
                                         <div className="px-4 py-2 border border-dashed border-slate-200 rounded-[10px]
@@ -80,10 +67,10 @@ export function Navbar(){
                                             <input type="text" name="name" required placeholder="type your full name" className="p-3 rounded-md bg-zinc-700 text-zinc-200"/>
                                             <input type="email" name="email" required placeholder="type your email" className="p-3 rounded-md bg-zinc-700 text-zinc-200"/>
                                             <textarea name="message" cols={30} rows={10} placeholder="type your message here" 
-                                            className="p-3 rounded-md bg-zinc-700 text-zinc-200 max-h-[150px] min-h-[130px]"/>
+                                            className="p-3 rounded-md bg-zinc-700 text-zinc-200 max-h-[350px] min-h-[300px]"/>
                                             
                                             <button type="submit" className="py-3 text-zinc-200 rounded-md border border-zinc-500 hover:border-zinc-300
-                                            transition-colors duration-200">Send</button>
+                                            transition-colors duration-200 bg-green-600">Send</button>
                                         
                                             {/*API configurations*/}
 
@@ -118,10 +105,10 @@ export function Navbar(){
                                     <input type="text" name="name" required placeholder="type your full name" className="p-3 rounded-md bg-zinc-700 text-zinc-200"/>
                                     <input type="email" name="email" required placeholder="type your email" className="p-3 rounded-md bg-zinc-700 text-zinc-200"/>
                                     <textarea name="message" cols={30} rows={10} placeholder="type your message here" 
-                                    className="p-3 rounded-md bg-zinc-700 text-zinc-200 max-h-[150px] min-h-[130px]"/>
+                                    className="p-3 rounded-md bg-zinc-700 text-zinc-200 max-h-[350px] min-h-[300px]"/>
                                     
                                     <button type="submit" className="py-3 text-zinc-200 rounded-md border border-zinc-500 hover:border-zinc-300
-                                    transition-colors duration-200">Send</button>
+                                    transition-colors duration-200 bg-green-600">Send</button>
                                 
                                     {/*API configurations*/}
 
@@ -154,17 +141,17 @@ export function Navbar(){
                 </div>
             </section>
 
-            <section className="flex gap-4 items-center justify-between w-full mt-2">
+            <section className="flex gap-4 items-center justify-between w-full mt-2 sticky top-0 border-b-[1.5px] border-zinc-600 border-spacing-y-3
+            bg-black
+            ">
                 <div className="flex items-center text-zinc-500 py-2 gap-2
                 lg:text-[14px]
                 md:text-[13px]
                 min-[320px]:text-[13px]">
-                    <ActivedLinks href="/">about</ActivedLinks>
-                    <ActivedLinks href="/projectsPage">projects</ActivedLinks>
-                    <ActivedLinks href="/playHere">play here</ActivedLinks>
+                    <ActivedLinks href="/">projects</ActivedLinks>
+                    <ActivedLinks href="/about">about me</ActivedLinks>
                 </div>
             </section>
-            <Separator className="bg-zinc-600"/>
         </>
     )
 }

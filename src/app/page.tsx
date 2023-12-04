@@ -1,8 +1,8 @@
-import { Navbar } from "@/components/siteComponents/navbar";
+import { ProjectsComp } from "@/components/siteComponents/projectsPage";
 export default function Home() {
   return (
     <>
-      <Navbar/>
+      <ProjectsComp/>
     </>
   )
 }
