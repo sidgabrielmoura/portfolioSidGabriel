@@ -53,7 +53,7 @@ export function ProjectsComp(){
                             
                             <div className="flex items-center gap-2 hover:text-zinc-50"><FaGithub/><a target="_blank" href="https://github.com/sidgabrielmoura/text-convert">sidgabrielmoura/text-convert</a></div>
 
-                            <div className="w-full border flex justify-between border-zinc-500 bg-zinc-950 rounded-lg px-[20px] py-[3vh]
+                            <div className="w-full border flex justify-between border-zinc-500 bg-zinc-950 rounded-lg px-[20px] h-[16vh]
                             md:flex-row
                             min-[320px]:flex-col min-[320px]:gap-3">
                                 <div className="h-full flex items-center gap-3">
@@ -83,7 +83,7 @@ export function ProjectsComp(){
                         <section className="text-zinc-200 w-full flex flex-col gap-3">
                             <div className="flex items-center gap-2 hover:text-zinc-50"><FaGithub/><a target="_blank" href="https://github.com/sidgabrielmoura/fastCube">sidgabrielmoura/fastCube</a></div>
 
-                            <div className="w-full border flex justify-between border-zinc-500 bg-zinc-950 rounded-lg px-[20px] py-[3vh]
+                            <div className="w-full border flex justify-between border-zinc-500 bg-zinc-950 rounded-lg px-[20px] h-[16vh]
                             md:flex-row
                             min-[320px]:flex-col min-[320px]:gap-3">
                                 <div className="h-full flex items-center gap-3">
@@ -100,10 +100,10 @@ export function ProjectsComp(){
 
                                 </div>
 
-                                <div className="h-full flex justify-center flex-col">
+                                <section className="h-full flex flex-col justify-center">
                                     <h1 className="text-zinc-50">tools</h1>
                                     <p className="text-zinc-500 cursor-default transition-colors duration-300 text-[15px]">Tailwindcss / Next / React / TypeScript</p>    
-                                </div>
+                                </section>
                                 
                             </div>
                         </section>
@@ -112,7 +112,7 @@ export function ProjectsComp(){
                         <section className="text-zinc-200 w-full flex flex-col gap-3">
                             <div className="flex items-center gap-2 hover:text-zinc-50"><FaGithub/>{/*<a href="" target="_blank">...</a>*/}...</div>
 
-                            <div className="w-full border flex justify-between border-zinc-500 bg-zinc-950 rounded-lg px-[20px] py-[3vh] animate-pulse
+                            <div className="w-full border flex justify-between border-zinc-500 bg-zinc-950 rounded-lg px-[20px] h-[16vh] animate-pulse
                             md:flex-row
                             min-[320px]:flex-col min-[320px]:gap-3">
                                 <div className="h-full flex items-center gap-3">
@@ -141,7 +141,7 @@ export function ProjectsComp(){
                         <section className="text-zinc-200 w-full flex flex-col gap-3">
                             <div className="flex items-center gap-2 hover:text-zinc-50"><FaGithub/>{/*<a href="" target="_blank">...</a>*/}...</div>
 
-                            <div className="w-full border flex justify-between border-zinc-500 bg-zinc-950 rounded-lg px-[20px] py-[3vh] animate-pulse
+                            <div className="w-full border flex justify-between border-zinc-500 bg-zinc-950 rounded-lg px-[20px] h-[16vh] animate-pulse
                             md:flex-row
                             min-[320px]:flex-col min-[320px]:gap-3">
                                 <div className="h-full flex items-center gap-3">
