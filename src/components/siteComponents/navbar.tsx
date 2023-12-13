@@ -1,8 +1,6 @@
-import { LiaArrowsAltVSolid } from "react-icons/lia";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { HiBars3 } from "react-icons/hi2";
 import { Popover, PopoverTrigger, PopoverContent } from "../ui/popover";
-import { Separator } from "@/components/ui/separator";
 import '../../app/globals.css'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { ActivedLinks } from "./linksNavBar";
@@ -27,7 +25,7 @@ export function Navbar(){
                         <AvatarFallback className="text-slate-200 bg-black border border-zinc-400">SG</AvatarFallback>
                     </Avatar>
 
-                    <a href="https://github.com/sidgabrielmoura" className="text-slate-300
+                    <a href="https://github.com/sidgabrielmoura" target="_blank" className="text-slate-300
                     hover:text-slate-50  transition-colors duration-200
                     lg:text-[15px]
                     md:text-[12px]
@@ -141,7 +139,7 @@ export function Navbar(){
                 </div>
             </section>
 
-            <section className="flex gap-4 items-center justify-between w-full mt-2 sticky top-0 border-b-[1.5px] border-zinc-600 border-spacing-y-3
+            <section className="z-10 flex gap-4 items-center justify-between w-full mt-2 sticky top-0 border-b-[1.5px] border-zinc-600 border-spacing-y-3
             bg-black
             ">
                 <div className="flex items-center text-zinc-500 py-2 gap-2
