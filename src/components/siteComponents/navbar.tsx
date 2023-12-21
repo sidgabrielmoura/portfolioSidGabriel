@@ -21,7 +21,7 @@ export function Navbar(){
                     lg:w-[40px] lg:h-[40px]
                     md:w-[30px] md:h-[30px]
                     min-[320px]:w-[28px] min-[320px]:h-[28px]">
-                        <AvatarImage src="https://github.com/sidgabrielmoura.png" />
+                        <AvatarImage src="https://github.com/sidgabrielmoura.png"/>
                         <AvatarFallback className="text-slate-200 bg-black border border-zinc-400">SG</AvatarFallback>
                     </Avatar>
 

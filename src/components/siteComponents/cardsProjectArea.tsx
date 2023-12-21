@@ -14,7 +14,7 @@ export const ProjectCards = ({hrefGit, linkGitName, projectName, linkProjectName
 
     return(
         <>
-            <div className="flex items-center gap-2 hover:text-zinc-50"><FaGithub/><a target="_blank" href={hrefGit}>{linkGitName}</a></div>
+            <div className="flex items-center gap-2 hover:text-sky-400 transition-colors duration-300"><FaGithub/><a target="_blank" href={hrefGit}>{linkGitName}</a></div>
 
             <div className="w-full border flex justify-between border-zinc-500 bg-zinc-950 rounded-lg px-[20px] h-[16vh]
             md:flex-row
