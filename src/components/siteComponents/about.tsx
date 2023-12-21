@@ -26,8 +26,9 @@ export function About(){
                     <p className="text-zinc-300 p-[20px] rounded-lg bg-zinc-900 break-words flex items-center
                     md:w-[40vw] md:h-[30vh] md:py-5
                     min-[450px]:text-[15px]
-                    min-[320px]:w-full min-[320px]:text-[14px] min-[320px]:h-full">Com 18 anos e morando no Ceará, entrei de cabeça na programação frontend durante o ensino médio. Sou movido pela curiosidade, sempre em busca de desafios e apaixonado por tecnologia. Gosto de contribuir de forma proativa 
-                        em projetos inovadores. Se precisar de alguém cheio de energia e criatividade para seu projeto, tô pronto para embarcar!</p>
+                    min-[320px]:w-full min-[320px]:text-[14px] min-[320px]:h-full">
+                       At 18 years old and living in Ceará, I got into frontend programming during high school. I am driven by curiosity, always looking for challenges and passionate about technology. I like to contribute proactively to innovative projects. If you need someone full of energy and creativity for your project, Im ready to come on board!
+                    </p>
 
                 </section>
 

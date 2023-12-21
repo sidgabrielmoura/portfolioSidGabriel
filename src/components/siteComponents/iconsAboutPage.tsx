@@ -1,4 +1,4 @@
-import { SiTailwindcss, SiNextdotjs, SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiGit, SiNodedotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiGit, SiNodedotjs, SiFigma } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { ScrollArea } from "../ui/scroll-area";
 
@@ -14,6 +14,11 @@ export function IconsAbout(){
                             <p className="text-[15px] text-zinc-400 cursor-default">Tailwindcss</p>
                         </DivIcons>
                         
+                        <DivIcons>
+                            <SiFigma className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
+                            <p className="text-[15px] text-zinc-400 cursor-default">Figma</p>
+                        </DivIcons>
+
                         <DivIcons>
                             <FaReact className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
                             <p className="text-[15px] text-zinc-400 cursor-default">React</p>
