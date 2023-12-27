@@ -83,3 +83,46 @@
   from {transform: rotate(0);}
   to {transform: rotate(360deg);}
 }
+
+#mexe{
+  animation: mexe 0.3s infinite alternate;
+}
+
+@keyframes mexe {
+  0%{
+    bottom: 0;
+  }
+  100%{
+    bottom: 5px;
+  }
+  0%{
+    bottom: 0;
+  }
+  
+}
+
+/* h-[1.98rem] */
+
+#socialMidiaLink::after{
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #dd8b10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.2s ease-in-out;
+}
+
+#socialMidiaLink{
+  position: relative;
+}
+
+#socialMidiaLink:hover::after{
+  width: 100%;
+}
+
+#caixa{
+  background-image: linear-gradient(to right, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ff0055, #a200ff, #001aff, #0099ff, #00ff00, #ffff00);
+}
+

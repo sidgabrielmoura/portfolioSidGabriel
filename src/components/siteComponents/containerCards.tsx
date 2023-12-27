@@ -7,7 +7,7 @@ type Elements = {
 export const ContainerCards = ({ children }: Elements) => {
     return(
         <>
-            <div className="flex gap-5 mt-4 w-full flex-col">
+            <div className="flex gap-5 mt-1 w-full flex-col">
                 {children}
             </div>
         </>

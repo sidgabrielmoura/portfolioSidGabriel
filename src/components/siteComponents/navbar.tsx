@@ -89,7 +89,7 @@ export function Navbar(){
                         <Sheet>
                             <SheetTrigger>
                                 <div className="px-4 py-2 border border-dashed border-slate-200 rounded-[10px]
-                                hover:bg-zinc-800 hover:text-zinc-50 transition-colors duration-200
+                                hover:bg-zinc-800 hover:text-zinc-50 text-zinc-400 transition-colors duration-200
                                 md:block
                                 min-[320px]:hidden">Gmail message</div>
                             </SheetTrigger>
@@ -118,15 +118,15 @@ export function Navbar(){
                             </SheetContent>
                         </Sheet>
 
-                        <a href="https://github.com/sidgabrielmoura" className="hover:text-zinc-50 transition-colors duration-200
+                        <a href="https://github.com/sidgabrielmoura" className="hover:text-zinc-100 text-zinc-400 transition-colors duration-200
                         md:block
-                        min-[320px]:hidden" target="_blank">Github</a>
-                        <a href="https://www.linkedin.com/in/sid-gabriel-barbosa-moura-347474253/" className="hover:text-zinc-50 transition-colors duration-200
+                        min-[320px]:hidden" target="_blank" id="socialMidiaLink">Github</a>
+                        <a href="https://www.linkedin.com/in/sid-gabriel-barbosa-moura-347474253/" className="hover:text-zinc-100 text-zinc-400 transition-colors duration-200
                         md:block
-                        min-[320px]:hidden" target="_blank">LinkedIn</a>
-                        <a href="https://wa.me/+558592295470" className="hover:text-zinc-50 transition-colors duration-200
+                        min-[320px]:hidden" target="_blank" id="socialMidiaLink">LinkedIn</a>
+                        <a href="https://wa.me/+558592295470" className="hover:text-zinc-100 text-zinc-400 transition-colors duration-200
                         md:block
-                        min-[320px]:hidden" target="_blank">WhatsApp</a>
+                        min-[320px]:hidden" target="_blank" id="socialMidiaLink">WhatsApp</a>
 
                     <Avatar className="
                     lg:w-[30px] lg:h-[30px]
@@ -139,9 +139,8 @@ export function Navbar(){
                 </div>
             </section>
 
-            <section className="z-10 flex gap-4 items-center justify-between w-full mt-2 sticky top-0 border-b-[1.5px] border-zinc-600 border-spacing-y-3
-            bg-black
-            ">
+            <section className="z-10 flex gap-4 items-center justify-between w-full mt-2 sticky top-0 
+            bg-black">
                 <div className="flex items-center text-zinc-500 py-2 gap-2
                 lg:text-[14px]
                 md:text-[13px]
@@ -150,6 +149,8 @@ export function Navbar(){
                     <ActivedLinks href="/about">about me</ActivedLinks>
                 </div>
             </section>
+
+            <div id="caixa" className="w-full h-[1px] mt-1"/>
         </>
     )
 }

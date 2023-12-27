@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import '../../app/globals.css'
 
 type activeLinkProps = {
     href: string,
@@ -14,8 +15,9 @@ export const ActivedLinks = ({href, children}: activeLinkProps) => {
         
     return(
         <>
-            <Link href={href} className={`${isActive ? "transition-colors duration-300 delay-75 flex items-center justify-center h-[1.98rem] px-4 rounded-[3px] bg-zinc-800 text-zinc-200"
-            : "transition-colors duration-300 delay-75 flex items-center justify-center h-[1.98rem] px-4 rounded-[3px] hover:bg-zinc-900 hover:text-zinc-300"}`}>
+            <Link href={href} className={`${isActive ? "transition-colors duration-300 delay-75 flex items-center justify-center h-[1.98rem] px-4 rounded-[3px] bg-zinc-800 text-zinc-200 relative"
+            : "transition-colors duration-300 delay-75 flex items-center justify-center h-[1.98rem] px-4 rounded-[3px] hover:bg-zinc-900 hover:text-zinc-300"}`}
+            id={`${isActive ? "mexe" : " "}`}>
                 {children}
             </Link>
         </>
