@@ -5,7 +5,7 @@ export function About(){
         <>
             <main className="flex items-center justify-center h-[80vh]
             lg:px-[50px] lg:py-[25px] lg:flex-row lg:gap-3
-            min-[320px]:px-[25px] min-[320px]:py-[20px] min-[320px]:flex-col min-[320px]:justify-around min-[320px]:gap-5">
+            min-[320px]:px-[25px] min-[320px]:py-[20px] min-[320px]:justify-around min-[320px]:gap-5 min-[320px]:flex-col-reverse">
 
                 <section className="flex justify-center
                 lg:h-full lg:flex-col lg:border-r-[1.5px] lg:border-zinc-400 lg:w-[15vw]
