@@ -1,9 +1,5 @@
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger } from "../ui/select";
 import { Navbar } from "./navbar";
-import { AiOutlineBars } from "react-icons/ai";
-import { BiCategory } from "react-icons/bi";
-import { FaGithub } from "react-icons/fa";
-import { ScrollArea } from "../ui/scroll-area";
 import { ProjectCards } from "./cardsProjectArea";
 import { ContainerCards } from "./containerCards";
 import { ButtonsProjectCards } from "./projectCardsButtonsLayoutConfig";
@@ -71,14 +67,26 @@ export function ProjectsComp(){
 
                         <section className="text-zinc-200 w-full flex flex-col gap-3">
                             <ProjectCards 
-                                hrefGit="..."
-                                linkGitName="..."
-                                imageUrl=""
-                                projectName="Building..."
-                                linkProjectView="..."
-                                linkProjectName="..."
-                                tools="..." 
+                                hrefGit="https://github.com/sidgabrielmoura/Voice-Notes"
+                                linkGitName="sidgabrielmoura/Voice-Notes"
+                                imageUrl="bg-[url(../assets/voice-notes.png)]"
+                                projectName="Voice Notes"
+                                linkProjectView="https://voice-notes-lyart.vercel.app"
+                                linkProjectName="voice-notes-lyart.vercel.app"
+                                tools="Vite / Tailwindcss / React / TypeScript / Speech Recognition API" 
                                 />
+                        </section>
+
+                        <section className="text-zinc-200 w-full flex flex-col gap-3">
+                            <ProjectCards 
+                                hrefGit="https://github.com/sidgabrielmoura/colors-table"
+                                linkGitName="sidgabrielmoura/colors-table"
+                                imageUrl="bg-[url(../assets/colors-table.png)]"
+                                projectName="Colors-Table"
+                                linkProjectView="https://colors-table.vercel.app"
+                                linkProjectName="colors-table.vercel.app"
+                                tools="Next / Tailwindcss / React / Shadcn/ui / TypeScript" 
+                            />
                         </section>
 
                         <section className="text-zinc-200 w-full flex flex-col gap-3">
@@ -86,8 +94,20 @@ export function ProjectsComp(){
                                 hrefGit="..."
                                 linkGitName="..."
                                 imageUrl=""
-                                projectName="Building..."
-                                linkProjectView="..."
+                                projectName="building..."
+                                linkProjectView=""
+                                linkProjectName="..."
+                                tools="..." 
+                            />
+                        </section>
+                        
+                        <section className="text-zinc-200 w-full flex flex-col gap-3">
+                            <ProjectCards 
+                                hrefGit="..."
+                                linkGitName="..."
+                                imageUrl=""
+                                projectName="building..."
+                                linkProjectView=""
                                 linkProjectName="..."
                                 tools="..." 
                             />
