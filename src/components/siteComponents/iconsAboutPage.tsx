@@ -6,9 +6,8 @@ export function IconsAbout(){
     return(
         <>
             <ScrollArea>
-                <section className="flex
-                lg:flex-col lg:gap-8 lg:mt-0
-                min-[320px]:flex-row min-[320px]:gap-5 min-[320px]:flex-wrap min-[320px]:mt-[30px]">
+                <section className="grid grid-cols-2 gap-4 sm:grid-cols-4
+                lg:flex-col lg:gap-8 lg:mt-0 lg:flex">
                         <DivIcons>
                             <SiTailwindcss className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
                             <p className="text-[15px] text-zinc-400 cursor-default">Tailwindcss</p>
@@ -71,9 +70,8 @@ type divElements = {
 const DivIcons = ({ children }: divElements) => {
     return(
         <>
-            <div className="h-[30px] flex text-zinc-300
-            lg:gap-3
-            min-[320px]:gap-2">
+            <div className="h-[30px] flex text-zinc-300 gap-2
+            lg:gap-3">
                 {children}
             </div>
         </>

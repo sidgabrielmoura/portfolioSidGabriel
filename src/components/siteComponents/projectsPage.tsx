@@ -10,18 +10,17 @@ export function ProjectsComp(){
         <>
             <Navbar/>
             
-                <section className="flex flex-col gap-3 
-                lg:px-[50px] lg:py-[25px]
-                min-[320px]:px-[25px] min-[320px]:py-[20px]">
+                <section className="flex flex-col gap-3 py-[20px]
+                lg:px-[50px] lg:py-[25px]">
                     <div className="flex items-center justify-end w-full gap-3">
 
                         <ButtonsProjectCards/>
 
                         <Select disabled={true}>
                             <SelectTrigger className="h-[50px] bg-zinc-100 border border-zinc-500 
-                            p-3 rounded-[8px] font-semibold capitalize
-                            lg:text-[14px] lg:p-3 lg:w-[20vw]
-                            min-[320px]:text-[13px] min-[320px]:w-[50%] min-[320px]:truncate min-[320px]:p-2">
+                            rounded-[8px] font-semibold capitalize text-[13px] w-full truncate p-2
+                            sm:w-1/2
+                            lg:text-[14px] lg:p-3 lg:w-[20vw]">
                                 <div>select the project dimension</div> 
                             </SelectTrigger>
                             <SelectContent className="bg-zinc-900">
@@ -40,13 +39,13 @@ export function ProjectsComp(){
                         <section className="text-zinc-200 w-full flex flex-col gap-3">
                             
                             <ProjectCards 
-                                hrefGit="https://github.com/sidgabrielmoura/text-convert"
-                                linkGitName="sidgabrielmoura/text-convert"
-                                imageUrl="bg-[url(../assets/textConvert.png)]"
-                                projectName="Text-Convert"
-                                linkProjectView="https://text-convert-henna.vercel.app"
-                                linkProjectName="text-convert-henna.vercel.app"
-                                tools="JavaScript / Html5 / Css3"
+                                hrefGit="https://github.com/sidgabrielmoura/adverts-cmd"
+                                linkGitName="sidgabrielmoura/adverts-cmd"
+                                imageUrl="bg-[url(../assets/adverts-cmd.png)]"
+                                projectName="adverts-cmd"
+                                linkProjectView="https://adverts-cmd.vercel.app"
+                                linkProjectName="adverts-cmd.vercel.app"
+                                tools="Typescript / Nextjs / Node.js / postgres / API / Tailwindcss / React Hook Form / Zod / Shadcn/ui"
                             />
 
                         </section>
