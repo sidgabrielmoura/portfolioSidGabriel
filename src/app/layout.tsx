@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${noto.className} bg-[#000000] w-[100%] h-[100vh] p-3`}>
+        <Navbar/>
         {children}
       </body>
     </html>

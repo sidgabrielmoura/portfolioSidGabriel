@@ -1,79 +1,86 @@
-import { SiTailwindcss, SiNextdotjs, SiJavascript, SiHtml5, SiCss3, SiBootstrap, SiGit, SiNodedotjs, SiFigma } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { ScrollArea } from "../ui/scroll-area";
+import {
+    SiTailwindcss,
+    SiCss3,
+    SiTypescript,
+    SiNextdotjs,
+    SiJavascript,
+    SiHtml5,
+    SiPostman,
+    SiGit,
+    SiNodedotjs,
+    SiFigma,
+    SiVuedotjs,
+  } from "react-icons/si";
+import { 
+    FaReact, 
+    FaMobile 
+} from "react-icons/fa";
+  
+  export function IconsAbout() {
+    const icons = [
+      { icon: <SiTailwindcss />, name: "Tailwindcss" },
+      { icon: <SiFigma />, name: "Figma" },
+      { icon: <FaReact />, name: "React" },
+      { icon: <SiNextdotjs />, name: "Next.js" },
+      { icon: <SiJavascript />, name: "Javascript" },
+      { icon: <SiHtml5 />, name: "Html5" },
+      { icon: <SiCss3 />, name: "Css3" },
+      { icon: <SiGit />, name: "Git" },
+      { icon: <SiNodedotjs />, name: "NodeJs" },
+      { icon: <SiVuedotjs/>, name: "Vue.js"},
+      { icon: <SiTypescript/>, name: "Typescript"},
+      { icon: <SiPostman/>, name: "Postman"},
+      { icon: <FaMobile/>, name: "React-native"},
+    ];
+  
+    return (
+      <>
+        <div className="relative overflow-hidden h-[50px] w-full">
+            <div className="flex gap-10 whitespace-nowrap animate-marquee">
+                {icons.map((item, index) => (
+                    <div
+                        key={index}
+                        className="h-[30px] inline-flex items-center gap-2 text-zinc-300"
+                    >
+                        <div className="text-[23px] text-zinc-200 transition-colors duration-300">
+                            {item.icon}
+                        </div>
+                        <p className="text-[14px] text-zinc-400 cursor-default">
+                            {item.name}
+                        </p>
+                    </div>
+                ))}
 
-export function IconsAbout(){
-    return(
-        <>
-            <ScrollArea>
-                <section className="grid grid-cols-2 gap-4 sm:grid-cols-4
-                lg:flex-col lg:gap-8 lg:mt-0 lg:flex">
-                        <DivIcons>
-                            <SiTailwindcss className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
-                            <p className="text-[15px] text-zinc-400 cursor-default">Tailwindcss</p>
-                        </DivIcons>
-                        
-                        <DivIcons>
-                            <SiFigma className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
-                            <p className="text-[15px] text-zinc-400 cursor-default">Figma</p>
-                        </DivIcons>
+                {icons.map((item, index) => (
+                    <div
+                        key={`${index}-clone`}
+                        className="h-[30px] inline-flex items-center gap-2 text-zinc-300"
+                    >
+                        <div className="text-[23px] text-zinc-200 transition-colors duration-300">
+                            {item.icon}
+                        </div>
+                        <p className="text-[14px] text-zinc-400 cursor-default">
+                            {item.name}
+                        </p>
+                    </div>
+                ))}
 
-                        <DivIcons>
-                            <FaReact className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
-                            <p className="text-[15px] text-zinc-400 cursor-default">React</p>
-                        </DivIcons>
-
-                        <DivIcons>
-                            <SiNextdotjs className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
-                            <p className="text-[15px] text-zinc-400 cursor-default">Next.js</p>
-                        </DivIcons>
-
-                        <DivIcons>
-                            <SiJavascript className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
-                            <p className="text-[15px] text-zinc-400 cursor-default">Javascript</p>
-                        </DivIcons>
-
-                        <DivIcons>
-                            <SiHtml5 className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
-                            <p className="text-[15px] text-zinc-400 cursor-default">Html5</p>
-                        </DivIcons>
-
-                        <DivIcons>
-                            <SiCss3 className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
-                            <p className="text-[15px] text-zinc-400 cursor-default">Css3</p>                                 
-                        </DivIcons>
-
-                        <DivIcons>
-                            <SiBootstrap className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
-                            <p className="text-[15px] text-zinc-400 cursor-default">Bootstrap</p>
-                        </DivIcons>
-
-                        <DivIcons>
-                            <SiGit className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
-                            <p className="text-[15px] text-zinc-400 cursor-default">Git</p>
-                        </DivIcons>
-
-                        <DivIcons>
-                            <SiNodedotjs className="text-[25px] text-zinc-200 hover:text-emerald-500 transition-colors duration-300"/>
-                            <p className="text-[15px] text-zinc-400 cursor-default">NodeJs</p>
-                        </DivIcons>
-                </section>
-            </ScrollArea>
-        </>
-    )
-}
-
-type divElements = {
-    children: React.ReactNode
-}
-
-const DivIcons = ({ children }: divElements) => {
-    return(
-        <>
-            <div className="h-[30px] flex text-zinc-300 gap-2
-            lg:gap-3">
-                {children}
+                {icons.map((item, index) => (
+                    <div
+                        key={`${index}-clone`}
+                        className="h-[30px] inline-flex items-center gap-2 text-zinc-300"
+                    >
+                        <div className="text-[23px] text-zinc-200 transition-colors duration-300">
+                            {item.icon}
+                        </div>
+                        <p className="text-[14px] text-zinc-400 cursor-default">
+                            {item.name}
+                        </p>
+                    </div>
+                ))}
             </div>
-        </>
-    )
-}
+        </div>
+      </>
+    );
+  }
+  

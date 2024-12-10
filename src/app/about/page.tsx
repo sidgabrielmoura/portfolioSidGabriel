@@ -4,7 +4,6 @@ import { Navbar } from "@/components/siteComponents/navbar";
 export default function AboutMe(){
     return(
         <>
-            <Navbar/>
             <About/>
         </>
     )

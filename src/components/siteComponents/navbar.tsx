@@ -5,19 +5,18 @@ import '../../app/globals.css'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { ActivedLinks } from "./linksNavBar";
 
-export function Navbar(){
-    
-    return(
+export function Navbar() {
+
+    return (
         <>
             <section className="flex gap-4 items-center justify-between w-full mt-2">
-
                 <div className="flex items-center gap-2
                 lg:gap-3">
 
                     <Avatar className="w-[28px] h-[28px]
                     lg:w-[40px] lg:h-[40px]
                     md:w-[30px] md:h-[30px]">
-                        <AvatarImage src="https://github.com/sidgabrielmoura.png"/>
+                        <AvatarImage src="https://github.com/sidgabrielmoura.png" />
                         <AvatarFallback className="text-slate-200 bg-black border border-zinc-400">SG</AvatarFallback>
                     </Avatar>
 
@@ -31,13 +30,12 @@ export function Navbar(){
                 </div>
                 <div className="flex items-center text-zinc-300 text-[12px] gap-3
                 lg:text-[14px] lg:gap-5">
-
                     <div className="flex items-center
                     md:hidden">
 
                         <Popover>
                             <PopoverTrigger className="text-[20px]">
-                                <HiBars3/>
+                                <HiBars3 />
                             </PopoverTrigger>
                             <PopoverContent className="flex flex-col gap-2 text-zinc-200 rounded-[20px] bg-zinc-950 bg-opacity-90 w-[200px] mr-2 ">
                                 <Sheet>
@@ -46,25 +44,27 @@ export function Navbar(){
                                         hover:bg-zinc-800 hover:text-zinc-50 transition-colors duration-200">Gmail message</div>
                                     </SheetTrigger>
                                     <SheetContent>
+                                        
                                         <SheetHeader>
                                             <SheetTitle className="text-zinc-200">Email Area</SheetTitle>
                                             <SheetDescription className="text-zinc-400">Send me a Email</SheetDescription>
                                         </SheetHeader>
+
                                         <form action="https://formsubmit.co/sidgabrielmoura40@gmail.com" method="post"
-                                        className="w-full flex flex-col gap-3 mt-5 text-[13px]">
-                                            <input type="text" name="name" required placeholder="type your full name" className="p-3 rounded-md bg-zinc-700 text-zinc-200"/>
-                                            <input type="email" name="email" required placeholder="type your email" className="p-3 rounded-md bg-zinc-700 text-zinc-200"/>
-                                            <textarea name="message" cols={30} rows={10} placeholder="type your message here" 
-                                            className="p-3 rounded-md bg-zinc-700 text-zinc-200 max-h-[350px] min-h-[300px]"/>
-                                            
+                                            className="w-full flex flex-col gap-3 mt-5 text-[13px]">
+                                            <input type="text" name="name" required placeholder="type your full name" className="p-3 rounded-md bg-zinc-700 text-zinc-200" />
+                                            <input type="email" name="email" required placeholder="type your email" className="p-3 rounded-md bg-zinc-700 text-zinc-200" />
+                                            <textarea name="message" cols={30} rows={10} placeholder="type your message here"
+                                            className="p-3 rounded-md bg-zinc-700 text-zinc-200 max-h-[350px] min-h-[300px]" />
+
                                             <button type="submit" className="py-3 text-zinc-200 rounded-md border border-zinc-500 hover:border-zinc-300
                                             transition-colors duration-200 bg-green-600">Send</button>
-                                        
+
                                             {/*API configurations*/}
 
                                             <input type="hidden" name="_subject" value={"Novo Contato"} />
-                                            <input type="text" name="_honey" className="hidden"/>
-                                            <input type="hidden" name="_captcha" value={"false"}/>
+                                            <input type="text" name="_honey" className="hidden" />
+                                            <input type="hidden" name="_captcha" value={"false"} />
                                         </form>
 
                                     </SheetContent>
@@ -76,51 +76,51 @@ export function Navbar(){
                         </Popover>
 
                     </div>
-                        <Sheet>
-                            <SheetTrigger>
-                                <div className="px-4 py-2 border border-dashed border-slate-200 rounded-[10px] hidden
+                    <Sheet>
+                        <SheetTrigger>
+                            <div className="px-4 py-2 border border-dashed border-slate-200 rounded-[10px] hidden
                                 hover:bg-zinc-800 hover:text-zinc-50 text-zinc-400 transition-colors duration-200
                                 md:block">Gmail message</div>
-                            </SheetTrigger>
-                            <SheetContent>
-                                <SheetHeader>
-                                    <SheetTitle className="text-zinc-200">Email Area</SheetTitle>
-                                    <SheetDescription className="text-zinc-400">Send me a Email</SheetDescription>
-                                </SheetHeader>
-                                <form action="https://formsubmit.co/sidgabrielmoura40@gmail.com" method="post"
+                        </SheetTrigger>
+                        <SheetContent>
+                            <SheetHeader>
+                                <SheetTitle className="text-zinc-200">Email Area</SheetTitle>
+                                <SheetDescription className="text-zinc-400">Send me a Email</SheetDescription>
+                            </SheetHeader>
+                            <form action="https://formsubmit.co/sidgabrielmoura40@gmail.com" method="post"
                                 className="w-full flex flex-col gap-3 mt-5 text-[13px]">
-                                    <input type="text" name="name" required placeholder="type your full name" className="p-3 rounded-md bg-zinc-700 text-zinc-200"/>
-                                    <input type="email" name="email" required placeholder="type your email" className="p-3 rounded-md bg-zinc-700 text-zinc-200"/>
-                                    <textarea name="message" cols={30} rows={10} placeholder="type your message here" 
-                                    className="p-3 rounded-md bg-zinc-700 text-zinc-200 max-h-[350px] min-h-[300px]"/>
-                                    
-                                    <button type="submit" className="py-3 text-zinc-200 rounded-md border border-zinc-500 hover:border-zinc-300
+                                <input type="text" name="name" required placeholder="type your full name" className="p-3 rounded-md bg-zinc-700 text-zinc-200" />
+                                <input type="email" name="email" required placeholder="type your email" className="p-3 rounded-md bg-zinc-700 text-zinc-200" />
+                                <textarea name="message" cols={30} rows={10} placeholder="type your message here"
+                                    className="p-3 rounded-md bg-zinc-700 text-zinc-200 max-h-[350px] min-h-[300px]" />
+
+                                <button type="submit" className="py-3 text-zinc-200 rounded-md border border-zinc-500 hover:border-zinc-300
                                     transition-colors duration-200 bg-green-600">Send</button>
-                                
-                                    {/*API configurations*/}
 
-                                    <input type="hidden" name="_subject" value={"Novo Contato"} />
-                                    <input type="text" name="_honey" className="hidden"/>
-                                    <input type="hidden" name="_captcha" value={"false"}/>
-                                </form>
+                                {/*API configurations*/}
 
-                            </SheetContent>
-                        </Sheet>
+                                <input type="hidden" name="_subject" value={"Novo Contato"} />
+                                <input type="text" name="_honey" className="hidden" />
+                                <input type="hidden" name="_captcha" value={"false"} />
+                            </form>
 
-                        <a href="https://github.com/sidgabrielmoura" className="hover:text-zinc-100 text-zinc-400 transition-colors duration-200 hidden
+                        </SheetContent>
+                    </Sheet>
+
+                    <a href="https://github.com/sidgabrielmoura" className="hover:text-zinc-100 text-zinc-400 transition-colors duration-200 hidden
                         md:blocken" target="_blank" id="socialMidiaLink">Github</a>
-                        <a href="https://www.linkedin.com/in/sid-gabriel-barbosa-moura-347474253/" className="hover:text-zinc-100 text-zinc-400 transition-colors duration-200 hidden
+                    <a href="https://www.linkedin.com/in/sid-gabriel-barbosa-moura-347474253/" className="hover:text-zinc-100 text-zinc-400 transition-colors duration-200 hidden
                         md:block" target="_blank" id="socialMidiaLink">LinkedIn</a>
-                        <a href="https://wa.me/+558592295470" className="hover:text-zinc-100 text-zinc-400 transition-colors duration-200 hidden
+                    <a href="https://wa.me/+558592295470" className="hover:text-zinc-100 text-zinc-400 transition-colors duration-200 hidden
                         md:block" target="_blank" id="socialMidiaLink">WhatsApp</a>
 
                     <Avatar className="hidden
                     lg:w-[30px] lg:h-[30px]
-                    md:w-[25px] md:h-[25px] md:block"> 
-                        <AvatarImage src="https://github.com/sidgabrielmoura.png" id="smallAvatar"/>
+                    md:w-[25px] md:h-[25px] md:block">
+                        <AvatarImage src="https://github.com/sidgabrielmoura.png" id="smallAvatar" />
                         <AvatarFallback className="text-slate-200 bg-black border border-zinc-400">SG</AvatarFallback>
                     </Avatar>
- 
+
                 </div>
             </section>
 
@@ -134,7 +134,7 @@ export function Navbar(){
                 </div>
             </section>
 
-            <div id="caixa" className="w-full h-[1px] mt-1"/>
+            <div id="caixa" className="w-full h-[1px] mt-1" />
         </>
     )
 }
