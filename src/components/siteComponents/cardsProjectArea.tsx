@@ -23,11 +23,11 @@ export const ProjectCards = ({hrefGit, linkGitName, projectName, linkProjectName
                 
                 <div className={`h-full w-full flex items-center gap-3 ${layout === 'category' ? 'flex-col' : ''}`}>
 
-                    <div className={`${imageUrl ? `${imageUrl} bg-cover bg-center rounded-xl hidden md:block ${layout === 'category' ? 'w-full h-[200px]' : 'min-w-[250px] h-[120px]'}`
-                    : `h-[70px] w-[200px] bg-cover bg-center rounded-xl hidden bg-zinc-400 animate-pulse md:block ${layout === 'category' ? 'w-full h-[200px]' : 'min-w-[200px] h-[100px]'}`}`} />
+                    <div className={`${imageUrl ? `${imageUrl} bg-cover bg-center rounded-xl hidden md:block ${layout === 'category' ? 'w-full min-h-[200px]' : 'min-w-[250px] h-[120px]'}`
+                    : `h-[70px] w-[200px] bg-cover bg-center rounded-xl hidden bg-zinc-400 animate-pulse md:block ${layout === 'category' ? 'w-full min-h-[200px]' : 'min-w-[250px] h-[100px]'}`}`} />
 
-                    <div className={`flex justify-between items-start w-full flex-col ${layout === 'category' ? 'lg:flex-col lg:items-start' : 'md:flex-row md:items-center'}`}>
-                        <div className="h-full flex justify-center flex-col ">
+                    <div className={`flex items-start w-full h-full flex-col justify-center ${layout === 'category' ? 'lg:flex-col lg:items-start lg:justify-center' : 'md:flex-row md:items-center md:justify-between'}`}>
+                        <div className="flex justify-center flex-col ">
                             <h1 className="text-zinc-50 text-[14px]
                             md:text-[15px]">{projectName}</h1>
                             <p className="text-zinc-500 hover:text-zinc-300
@@ -38,8 +38,8 @@ export const ProjectCards = ({hrefGit, linkGitName, projectName, linkProjectName
                         <div className={`flex justify-center flex-col ${layout === 'category' ? 'lg:text-start' : 'md:text-end'}`}>
                             <h1 className="text-zinc-50 text-[14px]
                             md:text-[15px]">tools</h1>
-                            <p className="text-zinc-500 cursor-default transition-colors duration-300 max-w-[250px] text-[12px]
-                            md:text-[14px]">{tools}</p>    
+                            <p className={`text-zinc-500 cursor-default transition-colors duration-300 text-[12px]
+                            md:text-[14px] ${layout === 'category' ? 'w-full' : 'max-w-[250px]'}`}>{tools}</p>    
                         </div>
                     </div>
                 </div>
