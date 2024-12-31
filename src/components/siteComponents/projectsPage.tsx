@@ -49,6 +49,7 @@ export function ProjectsComp() {
 
     const [layout, setLayout] = useState<'bars' | 'category'>('bars')
     const [selectedOption, setSelectedOption] = useState<'Small Projects' | 'Big Projects'>('Small Projects')
+    const [animating, setAnimating] = useState(false)
 
     useEffect(() => {
         const savedLayout = localStorage.getItem("configLayout") as 'bars' | 'category'
@@ -61,34 +62,39 @@ export function ProjectsComp() {
     };
 
     const [modalIsShowing, setModalIsShowing] = useState(false)
-    const toogleModal = () => setModalIsShowing(!modalIsShowing)
+    const toggleModal = () => setModalIsShowing(!modalIsShowing)
 
     const selectOption = (option: 'Small Projects' | 'Big Projects') => {
-        setSelectedOption(option)
-    }
+        setAnimating(true)
+        setTimeout(() => {
+            setSelectedOption(option);
+            setAnimating(false)
+        }, 200)
+        toggleModal();
+    };
 
     return (
         <section className="grid gap-3 py-5 lg:px-[50px] lg:py-[25px]">
+            {modalIsShowing && <div className="absolute w-[95%] h-[90%] top-0 z-20" onClick={toggleModal} />}
             <div className="flex max-sm:flex-col items-center justify-end w-full md:gap-3 gap-2">
                 <LayoutConfigButtons onUpdateLayout={updateLayout} />
-
-                <main className="relative w-full md:w-auto">
-                    <section className="h-[50px] bg-zinc-100/90 border border-zinc-500 px-8 cursor-pointer
-                    rounded-[8px] font-semibold capitalize text-[13px] w-full truncate p-2 flex items-center" onClick={toogleModal}>
+                <main className="relative w-full md:w-auto z-[99]">
+                    <section
+                        className="h-[50px] bg-zinc-100/90 border border-zinc-500 px-8 cursor-pointer rounded-[8px]
+                        font-semibold capitalize text-[13px] w-full truncate p-2 flex items-center"
+                        onClick={toggleModal}
+                    >
                         <div>project dimension</div>
                     </section>
-
                     {modalIsShowing && (
                         <section
-                            className={`absolute text-zinc-50 w-full bg-zinc-800 flex flex-col mt-4 rounded-2xl overflow-hidden border border-zinc-600 z-[999]`}
+                            className="absolute text-zinc-50 w-full bg-zinc-800 flex flex-col mt-4 rounded-2xl
+                            overflow-hidden border border-zinc-600"
                         >
-                            {/* <span className="cursor-pointer hover:bg-zinc-700 py-3 px-4">Small</span>
-                            <span className="cursor-pointer hover:bg-zinc-700 py-3 px-4">Big</span> */}
-
                             {['Small Projects', 'Big Projects'].map((option) => (
                                 <div
                                     key={option}
-                                    className={`cursor-pointer hover:bg-zinc-700 py-3 px-4 flex justify-between items-center`}
+                                    className="cursor-pointer hover:bg-zinc-700 py-3 px-4 flex justify-between items-center"
                                     onClick={() => selectOption(option as 'Small Projects' | 'Big Projects')}
                                 >
                                     <span>{option}</span>
@@ -117,8 +123,9 @@ export function ProjectsComp() {
 
             {/* Cards */}
             <div
-                className={`grid gap-2 mt-1 w-full ${layout === 'category' ? 'lg:grid-cols-3 md:grid-cols-2' : 'grid-cols-1'
-                    }`}
+                className={`grid gap-2 mt-1 w-full transition-opacity duration-500 ${animating ? 'opacity-0' : 'opacity-100'} ${
+                    layout === 'category' ? 'lg:grid-cols-3 md:grid-cols-2' : 'grid-cols-1'
+                }`}
             >
                 {selectedOption === 'Small Projects' &&
                     smallProjects.map((project, index) => (
