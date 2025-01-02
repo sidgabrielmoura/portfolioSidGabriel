@@ -7,15 +7,6 @@ import { LayoutConfigButtons } from "./layoutConfigButtons";
 export function ProjectsComp() {
     const smallProjects = [
         {
-            hrefGit: "https://github.com/sidgabrielmoura/adverts-cmd",
-            linkGitName: "sidgabrielmoura/adverts-cmd",
-            imageUrl: "bg-[url(../assets/adverts-cmd.png)]",
-            projectName: "adverts-cmd",
-            linkProjectView: "https://adverts-cmd.vercel.app",
-            linkProjectName: "adverts-cmd.vercel.app",
-            tools: "Typescript / Nextjs / Node.js / postgres / API / Tailwindcss / React Hook Form / Zod / Shadcn/ui",
-        },
-        {
             hrefGit: "https://github.com/sidgabrielmoura/fastCube",
             linkGitName: "sidgabrielmoura/fastCube",
             imageUrl: "bg-[url(../assets/fast-cube-img.png)]",
