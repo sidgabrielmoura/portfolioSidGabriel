@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger } from "../ui/select";
 import { ProjectCards } from "./cardsProjectArea";
 import { LayoutConfigButtons } from "./layoutConfigButtons";
+import { ChevronDown } from "lucide-react"
 
 export function ProjectsComp() {
     const smallProjects = [
@@ -71,11 +72,12 @@ export function ProjectsComp() {
                 <LayoutConfigButtons onUpdateLayout={updateLayout} />
                 <main className="relative w-full md:w-auto z-[99]">
                     <section
-                        className="h-[50px] bg-zinc-100/90 border border-zinc-500 px-8 cursor-pointer rounded-[8px]
-                        font-semibold capitalize text-[13px] w-full truncate p-2 flex items-center"
+                        className="h-[50px] bg-zinc-100/90 border border-zinc-500 px-5 cursor-pointer rounded-[8px]
+                        font-semibold capitalize text-[13px] w-full truncate p-2 flex items-center min-w-[200px] justify-between"
                         onClick={toggleModal}
                     >
-                        <div>project dimension</div>
+                        <div>{selectedOption}</div>
+                        <ChevronDown className={`text-zinc-600 transition-all duration-200 ${modalIsShowing ? 'rotate-180' : 'rotate-0'}`}/>
                     </section>
                     {modalIsShowing && (
                         <section
