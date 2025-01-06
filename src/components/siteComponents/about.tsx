@@ -12,16 +12,21 @@ export function About() {
             name: "Sid Gabriel Barbosa Moura",
             role: "Desenvolvedor Front-End & Designer",
             aboutTitle: "Sobre mim",
-            aboutText1: `Sou desenvolvedor frontend e designer de websites, com experiência prática de um ano, atuando como freelancer e contratado. Especialista em transformar layouts em interfaces funcionais e responsivas, domino três linguagens, quatro frameworks e dois componentes de estilização, garantindo soluções modernas e eficazes.`,
-            aboutText2: `Com dedicação ao aprendizado desde 2020 e formação em três cursos avançados, entrego projetos com excelência técnica, alinhados às melhores práticas do mercado. Minha prioridade é oferecer resultados que unem desempenho, estética e foco na experiência do usuário.`
+            aboutText1: `Sou desenvolvedor frontend e designer, com experiência prática de um ano, atuando tanto como freelancer quanto como contratado. 
+                         Especialista em transformar layouts em interfaces funcionais e responsivas, garantindo soluções modernas e eficazes.`,
+            aboutText2: `Com experiências sólidas no front-end, entrego projetos com excelência técnica, alinhados às melhores práticas do mercado. 
+                         Minha prioridade é oferecer resultados que unem desempenho, estética e foco na experiência do usuário.`
         },
         en: {
             name: "Sid Gabriel Barbosa Moura",
             role: "Front-End Developer & Designer",
             aboutTitle: "About Me",
-            aboutText1: `I am a frontend developer and website designer with one year of hands-on experience, working as a freelancer and employee. Specialized in transforming layouts into functional and responsive interfaces, I master three languages, four frameworks, and two styling components, ensuring modern and effective solutions.`,
-            aboutText2: `With dedication to learning since 2020 and completion of three advanced courses, I deliver projects with technical excellence, aligned with market best practices. My priority is to offer results that combine performance, aesthetics, and user experience focus.`
+            aboutText1: `I am a frontend developer and designer with one year of practical experience, working both as a freelancer and an employee. 
+                         I specialize in transforming layouts into functional and responsive interfaces, ensuring modern and effective solutions.`,
+            aboutText2: `With solid front-end experience, I deliver projects with technical excellence, aligned with the best market practices. 
+                         My priority is to provide results that combine performance, aesthetics, and a strong focus on user experience.`
         }
+        
     };
 
     const handleLanguageChange = (lang: "pt" | "en") => setLanguage(lang);
