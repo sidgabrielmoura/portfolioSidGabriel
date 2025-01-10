@@ -17,6 +17,15 @@ export const smallProjects = [
         linkProjectName: "colors-table.vercel.app",
         tools: "Next / Tailwindcss / React / Shadcn/ui / TypeScript",
     },
+    {
+        hrefGit: "https://github.com/sidgabrielmoura/diascontados",
+        linkGitName: "sidgabrielmoura/diascontados",
+        imageUrl: "bg-[url(../assets/diascontados.png)]",
+        projectName: "diascontados",
+        linkProjectView: "https://diascontados.online",
+        linkProjectName: "diascontados.online",
+        tools: "Next.js / Tailwindcss / React / Shadcn/ui / TypeScript / google adsense / GoDaddy domain",
+    },
 ]
 
 export const bigProjects = [
