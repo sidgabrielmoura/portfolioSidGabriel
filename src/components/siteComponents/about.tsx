@@ -5,7 +5,7 @@ import { IconsAbout } from "./iconsAboutPage";
 import {  } from 'react-icons'
 
 export function About() {
-    const [language, setLanguage] = useState("pt"); // Estado para idioma
+    const [language, setLanguage] = useState("pt")
 
     const content: any = {
         pt: {

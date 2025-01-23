@@ -1,23 +1,5 @@
 export const smallProjects = [
     {
-        hrefGit: "https://github.com/sidgabrielmoura/fastCube",
-        linkGitName: "sidgabrielmoura/fastCube",
-        imageUrl: "bg-[url(../assets/fast-cube-img.png)]",
-        projectName: "fastCube",
-        linkProjectView: "https://fast-cube.vercel.app",
-        linkProjectName: "fast-cube.vercel.app",
-        tools: "Tailwindcss / Next / React / TypeScript",
-    },
-    {
-        hrefGit: "https://github.com/sidgabrielmoura/colors-table",
-        linkGitName: "sidgabrielmoura/colors-table",
-        imageUrl: "bg-[url(../assets/colors-table.png)]",
-        projectName: "Colors-Table",
-        linkProjectView: "https://colors-table.vercel.app",
-        linkProjectName: "colors-table.vercel.app",
-        tools: "Next / Tailwindcss / React / Shadcn/ui / TypeScript",
-    },
-    {
         hrefGit: "https://github.com/sidgabrielmoura/diascontados",
         linkGitName: "sidgabrielmoura/diascontados",
         imageUrl: "bg-[url(../assets/diascontados.png)]",
@@ -26,9 +8,6 @@ export const smallProjects = [
         linkProjectName: "diascontados.online",
         tools: "Next.js / Tailwindcss / React / Shadcn/ui / TypeScript / google adsense / GoDaddy domain",
     },
-]
-
-export const bigProjects = [
     {
         hrefGit: "https://github.com/sidgabrielmoura/Voice-Notes",
         linkGitName: "sidgabrielmoura/Voice-Notes",
@@ -38,6 +17,18 @@ export const bigProjects = [
         linkProjectName: "voice-notes-lyart.vercel.app",
         tools: "Vite / Tailwindcss / React / TypeScript / Speech Recognition API",
     },
+    {
+        hrefGit: "https://github.com/sidgabrielmoura/amigosecreto",
+        linkGitName: "sidgabrielmoura/amigoSecreto",
+        imageUrl: "bg-[url(../assets/amigosecreto.png)]",
+        projectName: "amigoSecreto",
+        linkProjectView: "https://amigosecretos.online",
+        linkProjectName: "amigosecretos.online",
+        tools: "Next.js / Tailwindcss / React / TypeScript / Supabase / Supabase Oauth / resend / aceternity / noSQL / DB ",
+    },
+]
+
+export const bigProjects = [
     {
         hrefGit: "/",
         linkGitName: "...",
