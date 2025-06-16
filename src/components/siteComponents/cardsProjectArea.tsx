@@ -13,6 +13,27 @@ type CardsElements = {
 }
 
 export const ProjectCards = ({ hrefGit, linkGitName, projectName, linkProjectName, linkProjectView, tools, imageUrl, layout }: CardsElements) => {
+    const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN
+
+    const fetchGitHubData = async () => {
+        const response = await fetch('https://api.github.com/users/sidgabrielmoura/repos?type=owner', {
+            headers: {
+                Authorization: `token ${token}`,
+                Accept: 'application/vnd.github.v3+json',
+            },
+        })
+        
+        if (!response.ok) {
+            throw new Error('Erro ao acessar a API')
+        }
+        
+        const data = await response.json()
+    }
+
+    useEffect(() => {
+        fetchGitHubData()
+    }, [])
+
     return (
         <>
             <div className="flex items-center gap-2 text-zinc-400 hover:text-zinc-200 transition-colors duration-300 w-full text-[14px] sm:text-[16px]"><FaGithub /><a target="_blank" href={hrefGit} className="flex gap-2 items-center">{linkGitName}<FaExternalLinkAlt className="text-[12px]" /></a></div>

@@ -1,12 +1,21 @@
 export const smallProjects = [
     {
+        hrefGit: "https://github.com/sidgabrielmoura/uoec",
+        linkGitName: "sidgabrielmoura/uoec-uploader",
+        imageUrl: "bg-[url(../assets/uoec.png)]",
+        projectName: "uoec-uploader",
+        linkProjectView: "https://uoec.vercel.app",
+        linkProjectName: "uoec.vercel.app",
+        tools: "Next.js / Tailwindcss / React / TypeScript / Shadcn/ui / API RestFull / Supabase / Canvas / CRUD / File Uploader / Image Resizer / Local Storage",
+    },
+    {
         hrefGit: "https://github.com/sidgabrielmoura/diascontados",
         linkGitName: "sidgabrielmoura/diascontados",
         imageUrl: "bg-[url(../assets/diascontados.png)]",
         projectName: "diascontados",
         linkProjectView: "https://diascontados.online",
         linkProjectName: "diascontados.online",
-        tools: "Next.js / Tailwindcss / React / Shadcn/ui / TypeScript / google adsense / GoDaddy domain",
+        tools: "Next.js / Tailwindcss / React / Shadcn/ui / TypeScript / GoDaddy domain",
     },
     {
         hrefGit: "https://github.com/sidgabrielmoura/Voice-Notes",
@@ -16,15 +25,6 @@ export const smallProjects = [
         linkProjectView: "https://voice-notes-lyart.vercel.app",
         linkProjectName: "voice-notes-lyart.vercel.app",
         tools: "Vite / Tailwindcss / React / TypeScript / Speech Recognition API",
-    },
-    {
-        hrefGit: "https://github.com/sidgabrielmoura/amigosecreto",
-        linkGitName: "sidgabrielmoura/amigoSecreto",
-        imageUrl: "bg-[url(../assets/amigosecreto.png)]",
-        projectName: "amigoSecreto",
-        linkProjectView: "https://amigosecretos.online",
-        linkProjectName: "amigosecretos.online",
-        tools: "Next.js / Tailwindcss / React / TypeScript / Supabase / Supabase Oauth / resend / aceternity / noSQL / DB ",
     },
 ]
 

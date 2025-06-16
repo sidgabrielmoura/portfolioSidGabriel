@@ -4,11 +4,9 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger } from ".
 import { ProjectCards } from "./cardsProjectArea";
 import { LayoutConfigButtons } from "./layoutConfigButtons";
 import { ChevronDown } from "lucide-react"
-import { smallProjects, bigProjects } from "./projects";
+import { smallProjects, bigProjects } from "../../services/api/projects";
 
 export function ProjectsComp() {
-    
-
     const [layout, setLayout] = useState<'bars' | 'category'>('bars')
     const [selectedOption, setSelectedOption] = useState<'Small Projects' | 'Big Projects'>('Small Projects')
     const [animating, setAnimating] = useState(false)
